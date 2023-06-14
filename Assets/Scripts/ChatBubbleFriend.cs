@@ -9,13 +9,9 @@ namespace BinusChat
     {
         [SerializeField] private TextMeshProUGUI chatText;
 
-        private void Start()
-        {
-            chatText.text = "";
-        }
-
         public void UpdateChat(string text)
         {
+            Debug.Log(text);
             chatText.text = text;
         }
     }

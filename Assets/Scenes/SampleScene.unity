@@ -9818,22 +9818,10 @@ MonoBehaviour:
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1250386997}
-        m_TargetAssemblyTypeName: BinusChat.ChatController, Assembly-CSharp
-        m_MethodName: PublishMessage
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1195068772}
-        m_TargetAssemblyTypeName: TMPro.TMP_InputField, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 5
+      - m_Target: {fileID: 1459292085}
+        m_TargetAssemblyTypeName: OpenAIController, Assembly-CSharp
+        m_MethodName: GetResponse
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10274,7 +10262,6 @@ MonoBehaviour:
   prefabChatBubbleUser: {fileID: 1414682816710061425, guid: 23038086629c51d41b23f7b73e514492, type: 3}
   prefabChatBubbleFriend: {fileID: 302722148818443432, guid: 250893f1ae321af4380914fef011d99f, type: 3}
   inputFieldChat: {fileID: 0}
-  chatCanvas: {fileID: 1268397615}
 --- !u!1 &1259556262
 GameObject:
   m_ObjectHideFlags: 0
@@ -12101,7 +12088,7 @@ MonoBehaviour:
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
+  m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
@@ -12411,6 +12398,51 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4569137920398073683, guid: 633aa7e229fe85241ae94845680683c0, type: 3}
   m_PrefabInstance: {fileID: 1459027156}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1459292083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1459292084}
+  - component: {fileID: 1459292085}
+  m_Layer: 0
+  m_Name: OpenAI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1459292084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459292083}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1624189111}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1459292085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1459292083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12f4f1f47ac1a09448d022d7fe5c10b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1195068772}
 --- !u!1001 &1495295000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13398,6 +13430,7 @@ Transform:
   m_Children:
   - {fileID: 419831043}
   - {fileID: 1250386996}
+  - {fileID: 1459292084}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

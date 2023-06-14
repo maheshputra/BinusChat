@@ -8,6 +8,8 @@ namespace BinusChat
 {
     public class ChatController : MonoBehaviour
     {
+        public static ChatController instance;
+
         [Header("Settings")]
         [SerializeField] private Transform chatContent;
 
@@ -15,23 +17,23 @@ namespace BinusChat
         [SerializeField] private ChatBubbleUser prefabChatBubbleUser;
         [SerializeField] private ChatBubbleFriend prefabChatBubbleFriend;
         [SerializeField] private TMP_InputField inputFieldChat;
-        
-        // Start is called before the first frame update
-        void Start()
+
+        private void Awake()
         {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+            if (instance != null) Destroy(gameObject);
+            else instance = this;
         }
 
         public void PublishMessage(string text)
         {
             ChatBubbleUser cbu = Instantiate(prefabChatBubbleUser, chatContent);
             cbu.UpdateChat(text);
+        }
+
+        public void PublishBotMessage(string text)
+        {
+            ChatBubbleFriend cbf = Instantiate(prefabChatBubbleFriend, chatContent);
+            cbf.UpdateChat(text);
         }
     }
 }

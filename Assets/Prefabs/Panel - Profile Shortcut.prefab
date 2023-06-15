@@ -134,6 +134,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 6064172484638943682}
+        m_TargetAssemblyTypeName: BinusChat.ChatShortcutBubble, Assembly-CSharp
+        m_MethodName: OpenChat
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4210502190661702034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,6 +171,7 @@ GameObject:
   - component: {fileID: 3936288567405734991}
   - component: {fileID: 3936288567405734989}
   - component: {fileID: 3936288567405734990}
+  - component: {fileID: 6064172484638943682}
   m_Layer: 5
   m_Name: Panel - Profile Shortcut
   m_TagString: Untagged
@@ -226,6 +239,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6064172484638943682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3936288567405735344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b21183da00561b4492295352f921f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 3936288567192592491}
+  textName: {fileID: 3936288567850704700}
 --- !u!1 &3936288567850704702
 GameObject:
   m_ObjectHideFlags: 0

@@ -463,8 +463,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1654941423}
   m_HandleRect: {fileID: 1654941422}
   m_Direction: 2
-  m_Value: 0.99999726
-  m_Size: 0.97799504
+  m_Value: 1
+  m_Size: 0.9779951
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -723,6 +723,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3936288567405734991, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
   m_PrefabInstance: {fileID: 60282121}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &60282123 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6064172484638943682, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
+  m_PrefabInstance: {fileID: 60282121}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b21183da00561b4492295352f921f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71872034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &117901024
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1464,6 +1475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1671,6 +1686,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Name
       value: Chat Card (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
@@ -1909,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2010,6 +2033,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Name
       value: Chat Card (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
@@ -2860,7 +2887,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -50, y: 2525}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &336962696
 MonoBehaviour:
@@ -5249,7 +5276,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 2
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -5267,7 +5294,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 200, y: 60, z: 200, w: 30}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5393,6 +5420,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Name
       value: Chat Card (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
@@ -6763,6 +6794,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811515834}
   m_CullTransparentMesh: 1
+--- !u!1 &812260975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812260976}
+  - component: {fileID: 812260977}
+  m_Layer: 0
+  m_Name: Chat List
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &812260976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812260975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1624189111}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812260977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812260975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f78955a934540c84899cbe56b3e5ebf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationSOs:
+  - {fileID: 11400000, guid: 4a10ec9507837444498c4cf31b296459, type: 2}
+  - {fileID: 11400000, guid: c47b8e95ea486f34d9c079f366b867db, type: 2}
+  - {fileID: 11400000, guid: a2b448fc67d04344d81c0112c4e933cc, type: 2}
+  - {fileID: 11400000, guid: c732225b9d777c44a8adf0467ac4d044, type: 2}
+  chatShortcutBubbles:
+  - {fileID: 1506636235}
+  - {fileID: 60282123}
+  - {fileID: 1659278815}
+  - {fileID: 2079094929}
+  chatListBubblePrefab: {fileID: 5793251669336134791, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+  chatListSpawnParent: {fileID: 336962695}
 --- !u!224 &824574719 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
@@ -7642,6 +7729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -8374,7 +8465,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
@@ -9273,6 +9364,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -9651,7 +9746,7 @@ GameObject:
   - component: {fileID: 1185182615}
   - component: {fileID: 1185182614}
   m_Layer: 5
-  m_Name: Panel - Navigation Bar
+  m_Name: Panel - Chat Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10045,6 +10140,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -10225,7 +10324,7 @@ GameObject:
   - component: {fileID: 1250386996}
   - component: {fileID: 1250386997}
   m_Layer: 0
-  m_Name: Chat
+  m_Name: Chat / Conversation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10259,9 +10358,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatContent: {fileID: 1385429763}
+  chatCanvas: {fileID: 1268397615}
   prefabChatBubbleUser: {fileID: 1414682816710061425, guid: 23038086629c51d41b23f7b73e514492, type: 3}
   prefabChatBubbleFriend: {fileID: 302722148818443432, guid: 250893f1ae321af4380914fef011d99f, type: 3}
   inputFieldChat: {fileID: 0}
+  chatBubbles: []
 --- !u!1 &1259556262
 GameObject:
   m_ObjectHideFlags: 0
@@ -11578,8 +11679,8 @@ RectTransform:
   m_Father: {fileID: 1865020167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.20792075}
-  m_AnchorMax: {x: 1, y: 0.9999999}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11700,7 +11801,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Enter text...
+  m_text: Enter message
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 559e3e8d61fae264eb162bc6be951a18, type: 2}
   m_sharedMaterial: {fileID: 8967578990222934341, guid: 559e3e8d61fae264eb162bc6be951a18, type: 2}
@@ -11745,7 +11846,7 @@ MonoBehaviour:
   m_charWidthMaxAdj: 0
   m_enableWordWrapping: 0
   m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
+  m_overflowMode: 2
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
@@ -11763,7 +11864,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 200, y: 60, z: 200, w: 30}
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -12252,7 +12353,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 12914013}
   m_HandleRect: {fileID: 12914012}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -12684,6 +12785,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3936288567405734991, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
   m_PrefabInstance: {fileID: 1506636231}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1506636235 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6064172484638943682, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
+  m_PrefabInstance: {fileID: 1506636231}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b21183da00561b4492295352f921f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1521015240
 GameObject:
   m_ObjectHideFlags: 0
@@ -12782,6 +12894,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Name
       value: Chat Card (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
@@ -13187,6 +13303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -13309,7 +13429,7 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 0}
@@ -13356,7 +13476,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1945837678}
   m_HandleRect: {fileID: 1945837677}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -13431,6 +13551,7 @@ Transform:
   - {fileID: 419831043}
   - {fileID: 1250386996}
   - {fileID: 1459292084}
+  - {fileID: 812260976}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14112,6 +14233,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3936288567405734991, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
   m_PrefabInstance: {fileID: 1659278813}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1659278815 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6064172484638943682, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
+  m_PrefabInstance: {fileID: 1659278813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b21183da00561b4492295352f921f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1689323127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14497,6 +14629,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1736911948}
   - component: {fileID: 1736911949}
+  - component: {fileID: 1736911950}
+  - component: {fileID: 1736911952}
+  - component: {fileID: 1736911951}
   m_Layer: 5
   m_Name: Text Area
   m_TagString: Untagged
@@ -14523,8 +14658,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.5}
-  m_SizeDelta: {x: -20, y: -13}
+  m_AnchoredPosition: {x: 0, y: -15}
+  m_SizeDelta: {x: -400, y: -90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736911949
 MonoBehaviour:
@@ -14540,6 +14675,57 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: -8, y: -5, z: -8, w: -5}
   m_Softness: {x: 0, y: 0}
+--- !u!114 &1736911950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736911947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 1
+--- !u!114 &1736911951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736911947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.003921569}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1736911952
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736911947}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1748197143
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14874,7 +15060,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 404453286}
   m_HandleRect: {fileID: 404453285}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -15373,8 +15559,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 461659203}
   m_HandleRect: {fileID: 461659202}
   m_Direction: 2
-  m_Value: 0.99999607
-  m_Size: 0.6448979
+  m_Value: 0.99999636
+  m_Size: 0.64489794
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -15601,6 +15787,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: BinusChat.ButtonScaleAnimation, Assembly-CSharp
         m_MethodName: ClickScale
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1250386997}
+        m_TargetAssemblyTypeName: BinusChat.ChatController, Assembly-CSharp
+        m_MethodName: EnableCanvas
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16047,6 +16245,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Name
       value: Chat Card (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
@@ -16734,7 +16936,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16918,7 +17120,7 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 1, y: 1}
@@ -16965,8 +17167,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1351319898}
   m_HandleRect: {fileID: 1351319897}
   m_Direction: 2
-  m_Value: 0.9999995
-  m_Size: 0.79207915
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -18137,6 +18339,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3936288567405734991, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
   m_PrefabInstance: {fileID: 2079094925}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2079094929 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6064172484638943682, guid: a54e31f1d3013004a8677855bfc109b9, type: 3}
+  m_PrefabInstance: {fileID: 2079094925}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b21183da00561b4492295352f921f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2091996793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18336,7 +18549,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1098208768}
   m_HandleRect: {fileID: 1098208767}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -19004,6 +19217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chat Card
       objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366574, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -19031,6 +19248,10 @@ PrefabInstance:
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_AnchorMin.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 5568798889922366575, guid: 7a82fb5cc1bf2a74a8bd372567b6b431, type: 3}
       propertyPath: m_SizeDelta.y

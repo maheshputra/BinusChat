@@ -281,8 +281,9 @@ GameObject:
   - component: {fileID: 5568798889922366575}
   - component: {fileID: 5568798889922366569}
   - component: {fileID: 5568798889922366568}
+  - component: {fileID: 5793251669336134791}
   m_Layer: 5
-  m_Name: Chat Card
+  m_Name: Chat List Bubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,6 +350,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5793251669336134791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5568798889922366574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b34e53100bfc234a93c1d268881abe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 5568798890193521381}
+  textName: {fileID: 5568798888630836180}
+  textLastMessage: {fileID: 5568798888705963290}
 --- !u!1 &5568798890193521387
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,6 +504,18 @@ MonoBehaviour:
       - m_Target: {fileID: 634445464915945288}
         m_TargetAssemblyTypeName: BinusChat.ButtonScaleAnimation, Assembly-CSharp
         m_MethodName: ClickScale
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 5793251669336134791}
+        m_TargetAssemblyTypeName: BinusChat.ChatListBubble, Assembly-CSharp
+        m_MethodName: OpenChat
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

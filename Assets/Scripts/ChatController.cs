@@ -12,6 +12,7 @@ namespace BinusChat
 
         [Header("Settings")]
         [SerializeField] private Transform chatContent;
+        private RectTransform chatContentRect;
 
         [Header("UI")]
         [SerializeField] private Canvas chatCanvas;
@@ -31,6 +32,7 @@ namespace BinusChat
         private void Start()
         {
             chatCanvas.gameObject.SetActive(true);
+            chatContentRect = chatContent.GetComponent<RectTransform>();
             EnableCanvas(false);
         }
 
@@ -64,6 +66,7 @@ namespace BinusChat
             ChatBubbleUser cbu = Instantiate(prefabChatBubbleUser, chatContent);
             cbu.UpdateChat(text);
             chatBubbles.Add(cbu.gameObject);
+            LayoutRebuilder.MarkLayoutForRebuild(chatContentRect);
         }
 
         public void PublishBotMessage(string text)
@@ -71,6 +74,7 @@ namespace BinusChat
             ChatBubbleFriend cbf = Instantiate(prefabChatBubbleFriend, chatContent);
             cbf.UpdateChat(text);
             chatBubbles.Add(cbf.gameObject);
+            LayoutRebuilder.MarkLayoutForRebuild(chatContentRect);
         }
     }
 }

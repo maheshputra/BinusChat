@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatText: {fileID: 4436617322388273360}
+  chatContentRect: {fileID: 4436617321633279851}
 --- !u!1 &4436617322388273374
 GameObject:
   m_ObjectHideFlags: 0

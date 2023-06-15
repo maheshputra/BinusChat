@@ -514,6 +514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chatText: {fileID: 4864564163226621286}
+  chatContentRect: {fileID: 4864564163578430173}
 --- !u!1 &4864564163856991321
 GameObject:
   m_ObjectHideFlags: 0

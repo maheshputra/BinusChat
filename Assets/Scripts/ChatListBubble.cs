@@ -13,18 +13,29 @@ namespace BinusChat
         [SerializeField] private TextMeshProUGUI textName;
         [SerializeField] private TextMeshProUGUI textLastMessage;
 
-        public void InitializeBubble(FriendSO friendSO, string textLastMessage)
+        public void InitializeBubble(FriendSO friendSO)
         {
             this.friendSO = friendSO;
             image.overrideSprite = friendSO.sprite;
             textName.text = friendSO.firstName + " " + friendSO.lastName;
-            this.textLastMessage.text = textLastMessage;
+            if (friendSO.chatDatas.Count > 0)
+                this.textLastMessage.text = friendSO.chatDatas[friendSO.chatDatas.Count - 1].message;
+            else
+                this.textLastMessage.text = "";
+        }
+
+        public void UpdateBubble(){            
+            if (friendSO.chatDatas.Count > 0)
+                this.textLastMessage.text = friendSO.chatDatas[friendSO.chatDatas.Count - 1].message;
+            else
+                this.textLastMessage.text = "";
         }
 
         public void OpenChat()
         {
-            ChatController.instance.LoadChat(ChatList.instance.Conversations[friendSO]);
+            ChatController.instance.LoadChat(friendSO);
             ChatController.instance.EnableCanvas(true);
+            ChatList.instance.SetLastBubble(friendSO);
         }
     }
 }

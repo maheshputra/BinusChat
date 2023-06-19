@@ -138,6 +138,7 @@ namespace OpenAI_API
 			}
 			else
 			{
+				OpenAIController.instance.FailedToSend();
 				try
 				{
 					resultAsString = await response.Content.ReadAsStringAsync();

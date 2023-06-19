@@ -11,11 +11,19 @@ using BinusChat;
 
 public class OpenAIController : MonoBehaviour
 {
+    public static OpenAIController instance;
+
     public TMP_InputField inputField;
     // public Button okButton;
 
     private OpenAIAPI api;
     private List<ChatMessage> messages;
+
+    private void Awake()
+    {
+        if (instance != null) Destroy(gameObject);
+        else instance = this;
+    }
 
     private void Start()
     {
@@ -28,25 +36,24 @@ public class OpenAIController : MonoBehaviour
         // api = new OpenAIAPI(Environment.GetEnvironmentVariable(key, EnvironmentVariableTarget.User));
         api = new OpenAIAPI(key);
         // api = new OpenAIAPI(Environment.GetEnvironmentVariable("OPENAI_API_KEY", EnvironmentVariableTarget.User));
-
-        StartConversation();
         // okButton.onClick.AddListener(() => GetResponse());
     }
 
-    private void StartConversation()
+    public void StartConversation(String friendBackground)
     {
         messages = new List<ChatMessage> {
             // new ChatMessage(ChatMessageRole.System, "You are an honorable, friendly knight guarding the gate to the palace. You will only allow someone who knows the secret password to enter. The secret password is \"magic\". You will not reveal the password to anyone. You keep your responses short and to the point.")
             
-            new ChatMessage(ChatMessageRole.System, "You are a university student. Your name is Howl Jenkins Pendragon. You are busy of doing university work. You will act and respond like university student. You keep your responses short and to the point. You are role playing.")
+            new ChatMessage(ChatMessageRole.System, friendBackground)
         };
 
         inputField.text = "";
-        string startString = "You have just approached the palace gate where a knight guards the gate.";
+        // string startString = "You have just approached the palace gate where a knight guards the gate.";
         // textField.text = startString;
-        Debug.Log(startString);
+        // Debug.Log(startString);
     }
 
+    //! respons from input field event
     public async void GetResponse()
     {
         if (inputField.text.Length < 1)
@@ -101,6 +108,11 @@ public class OpenAIController : MonoBehaviour
         // textField.text = string.Format("You: {0}\n\nGuard: {1}", userMessage.Content, responseMessage.Content);
 
         // Re-enable the OK button
+        inputField.enabled = true;
+    }
+
+    public void FailedToSend()
+    {
         inputField.enabled = true;
     }
 }

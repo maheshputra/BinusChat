@@ -13,7 +13,6 @@ namespace BinusChat
 
         [Header("UI")]
         [SerializeField] private Canvas canvasForum;
-        [SerializeField] private Canvas canvasForumScreen;
         
 
         private void Start()

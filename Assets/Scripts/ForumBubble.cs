@@ -33,5 +33,10 @@ namespace BinusChat
 
             Debug.Log(dateTime); // Outputs: 12/20/2023 12:00:00 AM
         }
+
+        public void ShowForum()
+        {
+            ForumScreen.instance.InitializeForumScreen(forumSO);
+        }
     }
 }

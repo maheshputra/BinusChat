@@ -12,9 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95dff2afb394f394ca5fd9c6c2e1774e, type: 3}
   m_Name: Forum 2
   m_EditorClassIdentifier: 
+  forumCreatorName: Ahmad Fauzi
   forumTitle: Report mingguan per kelompok
   forumDescription: Tolong sampaikan pendapat kalian tentang operation system jaman
     sekarang
   forumCourse: Operation System
-  forumDatas: []
+  forumDatas:
+  - commentatorName: Siti Rahmawati
+    comment: Menurut saya bahwa operation system sangat penting
+  - commentatorName: Budi Santoso
+    comment: Menurut saya operation system jaman sekarang sudah lebih maju daripada
+      jaman dahulu
   postDate: 18/06/2023

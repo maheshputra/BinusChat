@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95dff2afb394f394ca5fd9c6c2e1774e, type: 3}
   m_Name: Forum 1
   m_EditorClassIdentifier: 
-  forumCreatorName: 
+  forumCreatorName: Putri Sari
   forumTitle: Tugas GSLC 2
   forumDescription: Tolong jelaskan tentang peradaban manusia sebelum adanya HCI
   forumCourse: Human Computer and Interaction
   forumDatas:
-  - commentatorName: Nama 1
-    comment: Maaf pak saya belum tahu
+  - commentatorName: Nurul Hidayati
+    comment: Maaf bu saya belum tahu
+  - commentatorName: Aditya Pratama
+    comment: Sore bu maaf saya tidak tahu
   postDate: 20/06/2023

@@ -12,8 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95dff2afb394f394ca5fd9c6c2e1774e, type: 3}
   m_Name: Forum 4
   m_EditorClassIdentifier: 
+  forumCreatorName: Rizky Pratama
   forumTitle: Tugas GSLC 1
   forumDescription: Tolong jelaskan tentang peradaban manusia sebelum adanya HCI
   forumCourse: Human Computer and Interaction
-  forumDatas: []
+  forumDatas:
+  - commentatorName: Irfan Hakim
+    comment: Bagaimana cara menjelaskannya ya
+  - commentatorName: Maya Dewi
+    comment: Tolong bantu grup saya tidak aktif
+  - commentatorName: Rizki Nugraha
+    comment: Saya tidak tahu bagaimana cara menjelaskannya
+  - commentatorName: Desi Purnama
+    comment: Pertanyaannya menurut saya kurang konteks dan detail
+  - commentatorName: Arifin Suryadi
+    comment: Ada yang tahu email pak Rizky?
   postDate: 10/06/2023

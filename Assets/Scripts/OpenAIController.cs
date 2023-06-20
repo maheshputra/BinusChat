@@ -27,6 +27,10 @@ public class OpenAIController : MonoBehaviour
 
     private void Start()
     {
+        if (inputField != null)
+        {
+            inputField.onEndEdit.AddListener(OnEnterKeyPressed);
+        }
 
         // This line gets your API key (and could be slightly different on Mac/Linux)
         string key = "";
@@ -114,5 +118,14 @@ public class OpenAIController : MonoBehaviour
     public void FailedToSend()
     {
         inputField.enabled = true;
+    }
+
+    private void OnEnterKeyPressed(string value)
+    {
+        if (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.KeypadEnter))
+        {
+            Debug.Log("Enter key pressed. Input value: " + value);
+            GetResponse();
+        }
     }
 }

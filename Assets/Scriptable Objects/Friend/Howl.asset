@@ -16,6 +16,9 @@ MonoBehaviour:
   lastName: Jenkins Pendragon
   sprite: {fileID: 21300000, guid: 7765b9f28760be440879c7edccf37abe, type: 3}
   statusMessage: Magic
+  chatDatas:
+  - message: Oy
+    isUser: 0
   friendBackground: You are a university student. Your name is Howl Jenkins Pendragon.
     You are busy of doing university work. You will act and respond like university
     student. You keep your responses short and to the point. You are role playing.

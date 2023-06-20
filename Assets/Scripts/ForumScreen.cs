@@ -16,6 +16,9 @@ namespace BinusChat
         [SerializeField] private Transform commentParent;
         [SerializeField] private ForumCommentBubble commentBubblePrefab;
 
+        [Header("Input Field")]
+        [SerializeField] private TMP_InputField inputField;
+
         [Header("Settings")]
         [SerializeField] private string commentatorName;
 
@@ -31,6 +34,10 @@ namespace BinusChat
 
         private void Start()
         {
+            if (inputField != null)
+            {
+                inputField.onEndEdit.AddListener(OnEnterKeyPressed);
+            }
             canvasForumScreen.gameObject.SetActive(true);
             ShowForumScreen(false);
         }
@@ -76,6 +83,18 @@ namespace BinusChat
             fd.comment = str;
             currentForum.forumDatas.Add(fd);
             RefreshComment();
+        }
+
+        private void OnEnterKeyPressed(string value)
+        {
+            if (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.KeypadEnter))
+            {
+                Debug.Log("Enter key pressed. Input value: " + value);
+                AddComment(value);
+                
+                // Clear the input field
+                inputField.text = "";
+            }
         }
     }
 }
